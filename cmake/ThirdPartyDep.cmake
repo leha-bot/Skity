@@ -5,7 +5,7 @@ if(${SKITY_VCPKG})
   find_package(pugixml CONFIG REQUIRED)
 
   if(${ENABLE_LOG})
-    find_package(spdlong CONFIG REQUIRED)
+    find_package(spdlog CONFIG REQUIRED)
     target_link_libraries(skity PRIVATE spdlog::spdlog)
   endif()
 
